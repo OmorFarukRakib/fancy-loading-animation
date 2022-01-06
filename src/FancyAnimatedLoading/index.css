@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
+
+.loading_container {
+  position: relative;
+  width: 280px;
+  height: 280px;
+
+  /* border: 1px solid rgb(0, 0, 0, 0.3); */
+  /* border-radius: 10%; */
+  /* top: 40%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%) scale(1); */
+  /* background: #d8d8d8; */
+  /* box-shadow: inset 15px 15px 10px #999; */
+}
+
+.loading_text {
+  font: inherit;
+  color: red;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* font-family: "Vujahday Script", cursive; */
+}
+
+.character {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin: 2em auto;
+  /* transform: rotateY(90deg); */
+}
+
+/* .bug {
+
+  background: transparent
+    url("./assets/monster-bug-walking/spritesheet-min.png") 0 0 no-repeat;
+  width: 1216px;
+  height: 789px;
+  transform: translate(-50%, -50%) scale(0.2);
+  animation: run steps(21) infinite;
+  animation-duration: 1s;
+} */
+
+.bug {
+  /* transform: translate(-50%, -50%); */
+  background: transparent url('./assets/bug/bug.png') 0 0 no-repeat;
+  width: 302px;
+  height: 205px;
+
+  animation: bug steps(21) infinite;
+  animation-duration: 1s;
+}
+
+@keyframes bug {
+  100% {
+    background-position: -6342px, 0;
+    /* background-position: -25520px, 0; */
+  }
+}
+
+.ghost {
+  /* transform: translate(-50%, -50%); */
+  background: transparent url('./assets/ghost/ghost.png') 0 0 no-repeat;
+  width: 302px;
+  height: 250px;
+
+  animation: ghost steps(11) infinite;
+  animation-duration: 1s;
+}
+
+@keyframes ghost {
+  100% {
+    background-position: -3322px, 0;
+    /* background-position: -25520px, 0; */
+  }
+}
+
+.green_monster {
+  /* transform: translate(-50%, -50%); */
+  background: transparent url('./assets/green-monster/green-monster.png') 0 0
+    no-repeat;
+  width: 245px;
+  height: 250px;
+
+  animation: green_monster steps(11) infinite;
+  animation-duration: 1s;
+}
+
+@keyframes green_monster {
+  100% {
+    background-position: -2695px, 0;
+    /* background-position: -25520px, 0; */
+  }
+}
+
+.bee {
+  /* transform: translate(-50%, -50%); */
+  background: transparent url('./assets/bee/bee.png') 0 0 no-repeat;
+  width: 242px;
+  height: 250px;
+
+  animation: bee steps(13) infinite;
+  animation-duration: 1s;
+}
+
+@keyframes bee {
+  100% {
+    background-position: -3146px, 0;
+    /* background-position: -25520px, 0; */
+  }
+}
+
+.hairy_monster {
+  /* transform: translate(-50%, -50%); */
+  background: transparent url('./assets/hairy-monster/hairy-monster.png') 0 0
+    no-repeat;
+  width: 242px;
+  height: 250px;
+
+  animation: hairy_monster steps(13) infinite;
+  animation-duration: 1s;
+}
+
+@keyframes hairy_monster {
+  100% {
+    background-position: -3146px, 0;
+    /* background-position: -25520px, 0; */
+  }
+}
+
+.robot_ball {
+  /* transform: translate(-50%, -50%); */
+  background: transparent url('./assets/robot-ball/test.png') 0 0 no-repeat;
+  width: 196px;
+  height: 250px;
+
+  animation: robot_ball steps(16) infinite;
+  animation-duration: 1s;
+}
+
+@keyframes robot_ball {
+  100% {
+    background-position: -3136px, 0;
+    /* background-position: -25520px, 0; */
+  }
+}
+
+.blue_bat {
+  /* transform: translate(-50%, -50%); */
+  background: transparent url('./assets/blue-bat/blue-bat.png') 0 0 no-repeat;
+  width: 252px;
+  height: 250px;
+
+  animation: blue_bat steps(11) infinite;
+  animation-duration: 1s;
+}
+
+@keyframes blue_bat {
+  100% {
+    background-position: -2772px, 0;
+    /* background-position: -25520px, 0; */
+  }
+}
+
+.paper_bird {
+  /* transform: translate(-50%, -50%); */
+  background: transparent url('./assets/paper-bird/paper-bird.png') 0 0
+    no-repeat;
+  width: 286px;
+  height: 200px;
+
+  animation: paper_bird steps(11) infinite;
+  animation-duration: 1s;
+}
+
+@keyframes paper_bird {
+  100% {
+    background-position: -3146px, 0;
+    /* background-position: -25520px, 0; */
+  }
+}
+
+.puppy {
+  /* transform: translate(-50%, -50%); */
+  background: transparent url('./assets/puppy/puppy.png') 0 0 no-repeat;
+  width: 302px;
+  height: 205px;
+
+  animation: puppy steps(21) infinite;
+  animation-duration: 1s;
+}
+
+@keyframes puppy {
+  100% {
+    background-position: -6342px, 0;
+    /* background-position: -25520px, 0; */
+  }
+}
+
+/* .loading-text {
+  position: absolute;
+  color: red;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+@keyframes blink {
+  /**
+   * At the start of the animation the dot
+   * has an opacity of .2
+   */
+  0% {
+    opacity: 0.2;
+  }
+  /**
+   * At 20% the dot is fully visible and
+   * then fades out slowly
+   */
+  20% {
+    opacity: 1;
+  }
+  /**
+   * Until it reaches an opacity of .2 and
+   * the animation can start again
+   */
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.loading_text span {
+  /**
+   * Use the blink animation, which is defined above
+   */
+  animation-name: blink;
+  /**
+   * The animation should take 1.4 seconds
+   */
+  animation-duration: 1.4s;
+  /**
+   * It will repeat itself forever
+   */
+  animation-iteration-count: infinite;
+  /**
+   * This makes sure that the starting style (opacity: .2)
+   * of the animation is applied before the animation starts.
+   * Otherwise we would see a short flash or would have
+   * to set the default styling of the dots to the same
+   * as the animation. Same applies for the ending styles.
+   */
+  animation-fill-mode: both;
+}
+
+.loading_text span:nth-child(2) {
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .2s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: 0.2s;
+}
+
+.loading_text span:nth-child(3) {
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .4s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: 0.4s;
+}

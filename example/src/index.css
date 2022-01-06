@@ -12,3 +12,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.example-div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.input-props-div-left{
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  /* transform: translate(-50%, -50%); */
+
+}
+
+.input-props-div-right{
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  /* transform: translate(-50%, -50%); */
+
+}
+
+.footer-div{
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+}
