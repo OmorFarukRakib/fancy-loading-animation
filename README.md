@@ -15,7 +15,7 @@
 Install my component with npm
 
 ```bash
-  npm install my-project
+  npm i fancy-loading-animation
 ```
     
 ## Screenshots

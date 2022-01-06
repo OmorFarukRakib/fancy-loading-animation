@@ -18,6 +18,7 @@ const App = () => {
   const [loadingText, setLoadingText] = useState('LOADING')
   const [loadingSize, setLoadingSize] = useState(1)
   const [loadingAnimationDelay, setLoadingAnimationDelay] = useState(0.2)
+  const [loadingContainerRadius, setLoadingContainerRadius] = useState(50)
 
   const handleChangeVarient = (event) => {
     setLoadingAnimationVarient(event.target.value)
@@ -39,6 +40,9 @@ const App = () => {
   }
   const handleChangeLoadingAnimationDelay = (event) => {
     setLoadingAnimationDelay(event.target.value)
+  }
+  const handleChangeLoadingContainerRadius = (event) => {
+    setLoadingContainerRadius(event.target.value)
   }
   return (
     <>
@@ -151,6 +155,15 @@ const App = () => {
             type='number'
             inputProps={{ min: '0', max: '10', step: '0.1' }}
           />
+          <br />
+          <TextField
+            id='outlined-name'
+            label='loadingContainerRadius'
+            value={loadingContainerRadius}
+            onChange={handleChangeLoadingContainerRadius}
+            type='number'
+            inputProps={{ min: '0', max: '50', step: '5' }}
+          />
         </Box>
       </div>
 
@@ -164,11 +177,14 @@ const App = () => {
           loadingText={loadingText}
           loadingSize={loadingSize}
           loadingAnimationDelay={loadingAnimationDelay}
+          loadingContainerRadius={loadingContainerRadius}
         />
       </div>
       <div className='footer-div'>
         To explore all the props, please see the full documentation.{' '}
-        <a href='https://github.com/omorfarukrakib/fancy-loading-animation'>Here!</a>{' '}
+        <a href='https://github.com/omorfarukrakib/fancy-loading-animation'>
+          Here!
+        </a>{' '}
       </div>
     </>
   )
